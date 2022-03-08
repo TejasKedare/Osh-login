@@ -1,52 +1,68 @@
 <div class="signup-form">
   <form>
-    <div class="form-group">
-      <h4>create an account</h4>
+    <h4>create an account</h4>
+    <div class="form-group form-floating">
       <input
         type="text"
         class="form-control txt"
         id="formGroupExampleInput"
         placeholder="full name"
+        required
       />
+      <label for="floatingInput">full name <span class="astrix">*</span></label>
+    </div>
+
+    <div class="form-group form-floating">
       <input
         type="email"
         class="form-control txt"
         id="exampleInputEmail1"
         aria-describedby="emailHelp"
         placeholder="email-address"
+        required
       />
-      <!-- <small id="emailHelp" class="form-text text-muted"
-        >We'll never share your email with anyone else.</small
-      > -->
+      <label for="floatingInput">email <span class="astrix">*</span></label>
     </div>
-    <div class="form-group">
+    <div class="form-group form-floating">
       <input
         type="password"
         class="form-control txt"
         id="exampleInputPassword1"
         placeholder="password"
+        required
       />
+      <label for="floatingInput">password <span class="astrix">*</span></label>
     </div>
-    <div class="form-group">
+    <div class="form-group form-floating">
       <input
         type="password"
         class="form-control txt"
         id="exampleInputPassword1"
         placeholder="confirm password"
+        required
       />
+      <label for="floatingInput"
+        >confirm password <span class="astrix">*</span></label
+      >
     </div>
-    <input
-      type="text"
-      class="form-control txt"
-      id="formGroupExampleInput"
-      placeholder="interests"
-    />
-    <input
-      type="text"
-      class="form-control txt"
-      id="formGroupExampleInput"
-      placeholder="preferred size"
-    />
+    <div class="form-group form-floating">
+      <input
+        type="text"
+        class="form-control txt"
+        id="formGroupExampleInput"
+        placeholder="interests"
+      />
+      <label for="floatingInput">interests </label>
+    </div>
+    <div class="form-group form-floating">
+      <input
+        type="text"
+        class="form-control txt"
+        id="formGroupExampleInput"
+        placeholder="preferred size"
+      />
+      <label for="floatingInput">preferred size </label>
+    </div>
     <div class="form-check">
       <div>
         <input type="checkbox" class="form-check-input" id="exampleCheck1" />
