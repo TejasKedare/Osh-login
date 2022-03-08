@@ -1,0 +1,10 @@
+.flag {
+  width: 25px;
+  height: 25px;
+  padding: 0px 2px;
+}
+
+.navbar {
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 2px 10px #00000029;
+}

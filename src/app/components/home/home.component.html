@@ -1,0 +1,154 @@
+<div class="container">
+  <div class="profile">
+    <div class="card">
+      <img [src]="userData.image" class="card-img-top" alt="User Image" />
+      <div class="card-body">
+        <h4 class="card-title">
+          <h4>User Id: {{ userData?.id }}</h4>
+        </h4>
+        <div
+          class="personal-table content"
+          style="padding-top: 2rem; border-bottom: 1px solid black"
+        >
+          <u><h5>Personal Details</h5></u>
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">First Name</th>
+
+                <td>{{ userData?.first_name }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Last Name</th>
+
+                <td>{{ userData?.last_name }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Email</th>
+
+                <td>{{ userData?.email }}</td>
+              </tr>
+              <tr>
+                <th scope="row">D.O.B</th>
+
+                <td>{{ userData?.dob }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Gender</th>
+
+                <td>{{ userData?.gender }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Phone</th>
+
+                <td>{{ userData?.phone }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Phone Code</th>
+
+                <td>{{ userData?.phone_code }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div
+          class="Device-table content"
+          style="padding-top: 2rem; border-bottom: 1px solid black"
+        >
+          <u><h5>Device Details</h5></u>
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">Os Version</th>
+
+                <td>{{ userData?.os_version }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Device Model</th>
+
+                <td>{{ userData?.device_model }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Device Token</th>
+
+                <td>{{ userData?.device_token }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Device Type</th>
+
+                <td>{{ userData?.device_type }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div
+          class="Permissions-table content"
+          style="padding-top: 2rem; border-bottom: 1px solid black"
+        >
+          <u><h5>Permissions</h5></u>
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">Email Verified</th>
+
+                <td *ngIf="userData.is_email_verified == 1">YES</td>
+                <td *ngIf="userData.is_email_verified == 0">NO</td>
+              </tr>
+              <tr>
+                <th scope="row">Phone Verified</th>
+
+                <td *ngIf="userData.is_phone_verified == 1">YES</td>
+                <td *ngIf="userData.is_phone_verified == 0">NO</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Newsletter Subb</th>
+
+                <td *ngIf="userData?.newsletter_subscribed == 1">YES</td>
+                <td *ngIf="userData?.newsletter_subscribed == 0">NO</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Social Registered</th>
+
+                <td *ngIf="userData?.is_social_register == 1">YES</td>
+                <td *ngIf="userData?.is_social_register == 0">NO</td>
+              </tr>
+
+              <tr *ngIf="userData?.is_social_register == 1">
+                <th scope="row">Social Registered Type</th>
+
+                <td *ngIf="userData?.social_register_type">YES</td>
+                <td>NO</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- <p>First Name: {{ userData?.first_name }}</p>
+        <p>Last Name: {{ userData?.last_name }}</p>
+        <p>Email: {{ userData?.email }}</p>
+        <p>D.O.B: {{ userData?.dob }}</p>
+        <p>Gender: {{ userData?.gender }}</p>
+        <p>Email Verified: {{ userData?.is_email_verified }}</p>
+        <p>Phone Verified: {{ userData?.is_phone_verified }}</p>
+        <p>Social Registered: {{ userData?.is_social_register }}</p>
+        <p>Newsletter Subb: {{ userData?.newsletter_subscribed }}</p>
+        <p>Os Version: {{ userData?.os_version }}</p>
+        <p>Phone : {{ userData?.phone }}</p>
+        <p>Phone Code: {{ userData?.phone_code }}</p>
+        <p>Push Enabled: {{ userData?.push_enabled }}</p>
+        <p>Social Registered Type: {{ userData?.social_register_type }}</p>
+        <p>App Version: {{ userData?.app_version }}</p>
+        <p>Code: {{ userData?.code }}</p>
+        <p>Create Date: {{ userData?.create_date }}</p>
+        <p>Device Model: {{ userData?.device_model }}</p>
+        <p>Device Token: {{ userData?.device_token }}</p>
+        <p>Device Type: {{ userData?.device_type }}</p> -->
+      </div>
+    </div>
+    <div class="card"></div>
+  </div>
+</div>

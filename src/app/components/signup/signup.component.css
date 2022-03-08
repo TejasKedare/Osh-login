@@ -1,0 +1,30 @@
+.signup-form {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 15px #00000029;
+  opacity: 1;
+  padding: 2rem;
+  width: 95%;
+  height: 111%;
+}
+
+.txt {
+  margin: 1.2rem 0rem;
+  background: #f8f8f8 0% 0% no-repeat padding-box;
+}
+
+.form-check {
+  margin: 1rem 0rem;
+}
+
+.create-account-btn {
+  background: #ac0c00 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  width: 100%;
+}
+.create-account-btn:hover {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #ac0c00;
+  color: #ac0c00;
+  border-radius: 10px;
+  width: 100%;
+}

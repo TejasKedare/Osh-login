@@ -1,0 +1,66 @@
+<div class="login-form">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <h4>login</h4>
+      <input
+        type="email"
+        class="form-control txt"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="email-address"
+        formControlName="email"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="password"
+        class="form-control txt password"
+        id="exampleInputPassword1"
+        placeholder="password"
+        formControlName="password"
+      />
+    </div>
+    <div class="form-check">
+      <div class="row">
+        <div class="col-sm">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="exampleCheck1"
+            formControlName="rememberMe"
+          />
+          <label class="form-check-label" for="exampleCheck1">
+            <b>remember me</b>
+          </label>
+        </div>
+        <div class="col-sm">
+          <span style="float: right">
+            <b><u> forgot password? </u></b>
+          </span>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg login-btn">
+      login
+    </button>
+    <div class="or">
+      <b> or </b>
+    </div>
+
+    <div class="social-media-signup">
+      <button type="button" class="btn btn-primary btn-lg fb-btn">
+        <i class="fa-brands fa-facebook-f" style="margin-right: 2px"></i> sign
+        in with facebook
+      </button>
+
+      <button type="button" class="btn btn-lg google-btn">
+        <img
+          src="../../../assets/images/google.png"
+          alt="google"
+          style="height: 30px"
+        />
+        sign in with google
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,68 @@
+.footer {
+  background-color: black;
+  color: #ffffff;
+  width: 100vw;
+  margin-top: 6rem;
+}
+
+.footer-col {
+  margin-top: 5rem;
+}
+
+.about-us,
+.contact-us,
+.newsletter,
+.follow-us {
+  list-style: none;
+  text-align: left;
+  padding-top: 2rem;
+}
+
+.about-us > li,
+.contact-us > li,
+.newsletter > li,
+.follow-us > li {
+  margin: 1rem -2rem;
+}
+
+.contact-us-icon {
+  height: 22px;
+  width: 22px;
+  margin: 0px 10px;
+}
+
+.follow-us {
+  display: flex;
+  flex-direction: row;
+}
+
+.square {
+  border: 1px solid #ffffff;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+.copyright {
+  padding-top: 2rem;
+}
+
+.flags {
+  float: right;
+}
+
+.flags > img {
+  margin-right: 1rem;
+  height: 22px;
+  width: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  [class="row"] {
+    padding: 4rem;
+  }
+}
