@@ -2,7 +2,7 @@
   background-color: black;
   color: #ffffff;
   width: 100vw;
-  margin-top: 6rem;
+  margin-top: 10rem;
 }
 
 .footer-col {
@@ -64,6 +64,6 @@
 
 @media only screen and (max-width: 768px) {
   [class="row"] {
-    padding: 4rem;
+    padding: 5rem;
   }
 }
