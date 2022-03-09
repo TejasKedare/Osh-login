@@ -1,3 +1,7 @@
 .welcome-txt {
   margin: 2rem 0rem;
 }
+
+.welcome-txt > h3 {
+  font-weight: 800;
+}

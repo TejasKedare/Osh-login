@@ -23,6 +23,7 @@
 .newsletter > li,
 .follow-us > li {
   margin: 1rem -2rem;
+  /* font-weight: 300; */
 }
 
 .contact-us-icon {

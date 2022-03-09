@@ -1,6 +1,6 @@
 <div class="login-form">
   <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
-    <h4>login</h4>
+    <h4 style="font-weight: 700">login</h4>
     <div class="form-group form-floating btn-box">
       <input
         type="email"
@@ -47,7 +47,7 @@
       </div>
     </div>
     <button type="submit" class="btn btn-primary btn-lg login-btn">
-      login
+      <span style="font-weight: 600"> login </span>
     </button>
     <div class="or">
       <b> or </b>
@@ -55,8 +55,8 @@
 
     <div class="social-media-signup">
       <button type="button" class="btn btn-primary btn-lg fb-btn">
-        <i class="fa-brands fa-facebook-f" style="margin-right: 2px"></i> sign
-        in with facebook
+        <i class="fa-brands fa-facebook-f" style="margin-right: 2px"></i>
+        <span style="font-weight: 600"> sign in with facebook </span>
       </button>
 
       <button type="button" class="btn btn-lg google-btn">
@@ -65,7 +65,7 @@
           alt="google"
           style="height: 30px"
         />
-        sign in with google
+        <span style="font-weight: 600"> sign in with google </span>
       </button>
     </div>
   </form>
